@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwf7btx15e7sk"]
+
+[ext_resource type="PackedScene" uid="uid://llwryhpyt14q" path="res://player.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://g625jib58nv6" path="res://multiplayer-handler.tscn" id="2_e2o6t"]
+
+[node name="Game" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Multiplayer-handler" parent="." instance=ExtResource("2_e2o6t")]
