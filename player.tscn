@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://llwryhpyt14q"]
+
+[ext_resource type="Script" uid="uid://cr8rk5b4w6h0s" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dc1tk5mnnlfvx" path="res://icon.svg" id="2_onrkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i3pqv"]
+radius = 62.6817
+
+[node name="Player" type="Node"]
+script = ExtResource("1_4flbx")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(4, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_i3pqv")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("2_onrkg")
+
+[node name="Label" type="Label" parent="Area2D"]
+offset_left = -23.0
+offset_top = 64.0
+offset_right = 17.0
+offset_bottom = 87.0
+text = "Placeholder text"
